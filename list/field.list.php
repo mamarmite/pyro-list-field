@@ -83,7 +83,7 @@ class Field_list
 	 */
 	public function pre_output($input, $data)
 	{
-		$input = unserialize($data);
+		$input = unserialize($input);
 		if ($input) {
 			$output = array();
 			
@@ -108,8 +108,8 @@ class Field_list
 	 * @param array		$params 
 	 * @return array
 	 */
-	public function pre_output_plugin($input, $params)
+	/*public function pre_output_plugin($input, $params)
 	{
 		//didn't see any difference wtih pre_outpout so, do nothing.
-	}
+	}*/
 }
