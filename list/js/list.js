@@ -1,14 +1,14 @@
 (function($){
   $.fn.extend( {
     /*
-     *      The listfield jquery plugin
+     *      The listfield jquery pluggin
      *      Add new list item to the front end, to serialize them in backend and save them.
      */
     listfield: function( options ) {
       this.defaults = {
         addLabel: "+",
         removeLabel: "-",
-        rowClass: ""
+        rowClass: "wysiwyg-listsimple"
       };
       var settings = $.extend( {}, this.defaults, options );
 
@@ -96,3 +96,7 @@
     }
   });
 })( jQuery );
+
+jQuery(document).ready(function($) {
+    $('.list_field').listfield();
+});
